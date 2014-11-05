@@ -14,4 +14,16 @@ describe 'fizzbuzz' do
 		end
 	end
 
+	context 'knows that some numbers are not divisible by' do
+		it 'three' do
+			expect(is_divisible_by_three?(1)).to eq false
+		end
+		it 'five' do
+			expect(is_divisible_by_five?(1)).to eq false
+		end
+		it 'fifteen' do
+			expect(is_divisible_by_fifteen?(1)).to eq false
+		end
+	end
+
 end
