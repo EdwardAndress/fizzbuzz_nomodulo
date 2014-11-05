@@ -36,6 +36,9 @@ describe 'fizzbuzz' do
 		it 'should return "FizzBuzz" when the input number is divisible by both three and five (i.e. fifteen)' do
 			expect(fizzbuzz(15)).to eq "FizzBuzz"
 		end
+		it 'should return the input if the input is not divisible by three or five' do
+			expect(fizzbuzz(1)).to eq 1
+		end
 	end
 
 end
