@@ -26,4 +26,16 @@ describe 'fizzbuzz' do
 		end
 	end
 
+	context 'when being used in a game scenario' do
+		it 'should return "Fizz" when the input number is divisble by three' do
+			expect(fizzbuzz(3)).to eq "Fizz"
+		end
+		it 'should return "Buzz" when the input number is divisible by five' do
+			expect(fizzbuzz(5)).to eq "Buzz"
+		end
+		it 'should return "FizzBuzz" when the input number is divisible by both three and five (i.e. fifteen)' do
+			expect(fizzbuzz(15)).to eq "FizzBuzz"
+		end
+	end
+
 end
